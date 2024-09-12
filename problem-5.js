@@ -1,8 +1,8 @@
 // akhane prothom peramiter jabe Array & 2 nam peramiter jabe hocche namber
-function waitingTime(waitingTimes, serialNamber) {
+function waitingTime(waitingTimes, serialNumber) {
   if (
     Array.isArray(waitingTimes) !== true ||
-    typeof serialNamber !== "number"
+    typeof serialNumber !== "number"
   ) {
     return "Invalid Input";
   }
@@ -12,14 +12,14 @@ function waitingTime(waitingTimes, serialNamber) {
   }
   const arrayAvaj = waitingTime / waitingTimes.length;
   const roundSum = Math.round(arrayAvaj);
-  const waitCandited = serialNamber - 1;
+  const waitCandited = serialNumber - 1;
   const wait = waitCandited - waitingTimes.length;
   const result = roundSum * wait;
   return result;
 }
 
 //
-const roundabl = [7, 8, 3, 4, 5];
-const serial = "9";
+const roundabl = [3, 5, 7, 11, 6];
+const serial = 10;
 const calls = waitingTime(roundabl, serial);
 console.log(calls);

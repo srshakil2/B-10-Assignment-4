@@ -12,5 +12,7 @@ function checkDigitsInName(name) {
   }
   return false;
 }
-const i = checkDigitsInName("Raju6tre");
+
+//
+const i = checkDigitsInName(["Raj5s"]);
 console.log(i);

@@ -8,5 +8,7 @@ function sendNotification(email) {
   const result = emails.join(" " + "send you an email from" + " ");
   return result;
 }
-const r = sendNotification("sadia8icloud.com");
+
+//
+const r = sendNotification("fahim234.hotmail.com");
 console.log(r);

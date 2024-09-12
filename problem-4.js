@@ -12,11 +12,13 @@ function calculateFinalScore(obj) {
   }
   return false;
 }
+
+//
 const rslt = calculateFinalScore({
   name: "Rajib",
   testScore: 15,
   schoolGrade: 25,
-  isFFamily: true,
+  isFFamily: false,
 });
 
 console.log(rslt);
